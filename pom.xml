@@ -111,7 +111,7 @@
         <maven.surefire.version>2.18.1</maven.surefire.version>
         <spring.version>7.0.3</spring.version>
         <mockito.version>3.12.4</mockito.version>
-        <springboot.version>4.0.0-M2</springboot.version>
+        <springboot.version>4.0.2</springboot.version>
         <spring.boot.autoconfigure>4.0.2</spring.boot.autoconfigure>
         <snakeyaml.version>2.0</snakeyaml.version>
         <sonar.coverage.exclusions>
@@ -146,7 +146,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
+            <artifactId>spring-boot-starter-aspectj</artifactId>
             <version>${springboot.version}</version>
             <exclusions>
                 <exclusion>
