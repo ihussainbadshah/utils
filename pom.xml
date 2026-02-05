@@ -120,6 +120,19 @@
         </sonar.coverage.exclusions>
     </properties>
     
+    <repositories>
+        <repository>
+            <id>org.sonatype.central</id>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    
     <pluginRepositories>
         <pluginRepository>
             <id>dash-licenses-releases</id>
@@ -127,14 +140,6 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-   	        <id>org.sonatype.central</id>
-     	    <url>https://central.sonatype.com/repository/maven-snapshots/</url>
-     	    <snapshots>
-       	        <enabled>true</enabled>
-       	        <updatePolicy>always</updatePolicy>
-     	    </snapshots>
         </pluginRepository>
     </pluginRepositories>
 
